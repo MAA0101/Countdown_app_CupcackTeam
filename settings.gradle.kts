@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Countdown_app_CupcackTeam"
+rootProject.name = "Event CountDown"
 include(":app")
  
