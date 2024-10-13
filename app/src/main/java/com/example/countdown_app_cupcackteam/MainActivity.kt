@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.countdown_app_cupcackteam.ui.theme.Countdown_app_CupcackTeamTheme
+import com.example.eventcountdown.ui.theme.dashboard.components.DashboardScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,32 +20,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Countdown_app_CupcackTeamTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                           ////////////ffffffffff
-                        modifier = Modifier.padding(innerPadding)
-
-
-                    )
-                }
+                DashboardScreen()
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Countdown_app_CupcackTeamTheme {
-        Greeting("Android")
-    }
-}
